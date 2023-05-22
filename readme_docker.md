@@ -14,8 +14,8 @@ docker run -ti -v $PATH_TO_TEST_WORKDIR:/test
 
 #inside container
 cd /test
-cp -r /MitiHPC/example1/bam .
-cp /MitiHPC/scripts/init.sh .
+cp -r /MitoHPC/examples1/bams .
+cp /MitoHPC/scripts/init.sh .
 . init.sh 
 $HP_SDIR/run.sh > run.all.sh
 bash ./run.all.sh
